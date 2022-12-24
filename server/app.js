@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var resultRouter = require('./routes/result');
+const { getDataByScrap, saveToAtlas } = require('./crawl');
 
 var app = express();
 
@@ -37,5 +38,8 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// update data on server start
+getDataByScrap().then(data => saveToAtlas(data));
 
 module.exports = app;

@@ -1,1 +1,2 @@
+// create `atlas.myconfig.js` file with your atlas URI below
 module.exports = "mongodb+srv://mycluster.abcd1.mongodb.net/myFirstDatabase";

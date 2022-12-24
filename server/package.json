@@ -1,0 +1,18 @@
+{
+  "name": "qatar-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lechros",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^19.4.1"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
